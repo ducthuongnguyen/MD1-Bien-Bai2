@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính nhiệt độ</title>
+</head>
+<body>
+Nhập độ C <input type="number" id="doC">
+<br>
+<br>
+<button onclick="chuyenDoF()">Chuyển đổi sang độ F</button>
+<script>
+    function chuyenDoF() {
+    let a = document.getElementById('doC').value;
+    let rs = a / 5 * 9 + 32;
+        alert('Độ F là ' + rs)
+    }
+</script>
+</body>
+</html>

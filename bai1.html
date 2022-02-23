@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Diem</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Điểm Vật Lý</td>
+        <td><input type="number" id="vl"></td>
+    </tr>
+    <tr>
+        <td>Điểm Hóa Học</td>
+        <td><input type="number" id="hh"></td>
+    </tr>
+    <tr>
+        <td>Điểm Sinh Học</td>
+        <td><input type="number" id="sh"></td>
+    </tr>
+</table>
+<br>
+<button onclick='tinhTong()'>Điểm Tổng</button>
+<button onclick="tinhTB()"> Điểm Trung Bình</button>
+<script>
+    function tinhTong() {
+        let a = +document.getElementById('vl').value;
+        let b = +document.getElementById('hh').value;
+        let c = +document.getElementById('sh').value;
+        let tong = a+b+c;
+            alert('Điểm tổng là ' +tong);
+    }
+    function tinhTB() {
+        let a = +document.getElementById('vl').value;
+        let b = +document.getElementById('hh').value;
+        let c = +document.getElementById('sh').value;
+        let trungbinh = (a+b+c)/3;
+        alert('Điểm trung bình là ' +trungbinh);
+    }
+</script>
+</body>
+</html>
